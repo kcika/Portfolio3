@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navCon fixed w-full top-0 z-30">
+        <div class="navbar max-w-screen-2xl mx-auto flex justify-between items-center p-6">
+            <a href="index.html" class="text-2xl lg:text-4xl font-semibold logo"><i class="fa-solid fa-code"></i>
+                Bhumika</a>
+            <ul class="navlinks text-lg lg:text-xl flex items-center gap-1 md:gap-6 lg:gap-12">
+                <button class="cross"><i class="fa-solid fa-xmark"></i></button>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="flex">
+                <a href="#contact" class="navcta cta text-lg lg:text-xl px-3 py-3 lg:px-6 rounded-full">Connect with
+                    me</a>
+                <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- hero section -->
+        <div class="hero max-w-screen-2xl mx-auto p-6 mb-10" id="home">
+            <div class="grid justify-center text-center mt-40">
+                <div class="imgContainer flex align-center justify-center">
+                    <img src="images/home2.jpg" class="rounded-full" width="" alt="">
+                </div>
+                <p class="text-3xl pb-2 py-10">Hi, I'm Bhumika <span class="emoji">👋</span></p>
+                <p class="text-5xl md:text-7xl font-semibold title my-4"><span class="purple">Frontend </span>Developer
+                </p>
+                <p class="text-2xl px-4 md:px-6">I am a front-end developer based in Delhi. I'll help you build
+                    beautiful
+                    websites
+                    that your clients
+                    will love.</p>
+                <div class="connect mt-10 mb-5">
+                    <a href="#contact" class="cta text-xl px-6 py-3 rounded-full">Connect with me</a>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="about pt-10" id="about">
+            <div class="py-14 px-6 max-w-screen-2xl mx-auto my-0 md:my-10">
+                <p class="autoshow text-5xl text-center text-white font-medium">About Me</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-20 items-center justify-center gap-10">
+                    <div class="autoshow w-full flex justify-center md:justify-start items-center">
+                        <div class="aboutCont">
+                            <img src="images/about.jpg" width="" class="rounded-full" alt="">
+                        </div>
+                    </div>
+                    <div class="autoshow content text-center md:text-left">
+                        <p class="text-5xl gradient font-medium">My Introduction</p>
+                        <p class="text-xl lg:text-2xl my-8">I’m a passionate frontend developer with a keen eye for
+                            detail and a
+                            love
+                            for
+                            crafting seamless user experiences. With a
+                            solid foundation in HTML, CSS, and JavaScript, I specialize in creating responsive,
+                            interactive,
+                            and visually appealing
+                            web applications. I thrive on transforming design concepts into functional code and
+                            continuously
+                            seek to stay up-to-date
+                            with the latest industry trends and technologies.</p>
+                        <a href="images/CV.pdf" target="_blank"
+                            class="cta-resume text-xl px-6 py-3 rounded-full">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- skills section -->
+        <div class="skills pt-10" id="skills">
+            <div class="pt-14 px-6 max-w-screen-2xl mx-auto my-0 md:my-10">
+                <p class="text-5xl text-center text-white font-medium">Skills</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-10 justify-center gap-0 md:gap-8 lg:gap-20">
+                    <div class="autoshow">
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont html flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-html5 text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">HTML</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">92%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress htmlbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont css flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-css3 text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">CSS</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">88%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress cssbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont js flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-square-js text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">Javascript</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">80%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress jsbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont react flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-react text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">React</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">75%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress reactbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont php flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-php text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">PHP</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">80%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress phpbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont mysql flex items-center justify-center mr-5">
+                                        <i class="fa-solid fa-database text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">MySQL</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">65%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress mysqlbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoshow">
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont bootstrap flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-bootstrap text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">Bootstrap</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">85%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress bootstrapbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont tailwind flex items-center justify-center mr-5">
+                                        <img src="images/tailwind.png" width="40" height="40" alt="">
+                                    </div>
+                                    <p class="text-2xl font-medium">Tailwind</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">82%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress tailwindbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont git flex items-center justify-center mr-5">
+                                        <i class="fa-brands fa-github text-2xl"></i>
+                                    </div>
+                                    <p class="text-2xl font-medium">Git</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">65%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress gitbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont photoshop flex items-center justify-center mr-5">
+                                        <img src="images/Adobe-Photoshop-Logo.png" alt="">
+                                    </div>
+                                    <p class="text-2xl font-medium">Photoshop</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">85%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress photoshopbar"></div>
+                            </div>
+                        </div>
+                        <div class="my-8">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="iconCont illustrator flex items-center justify-center mr-5">
+                                        <img src="images/adobe-Illustrator-logo-0-1.png" alt="">
+                                    </div>
+                                    <p class="text-2xl font-medium">Illustrator</p>
+                                </div>
+                                <p class="text-2xl font-medium gradient">85%</p>
+                            </div>
+                            <div class="bar my-5">
+                                <div class="progress illustratorbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects section -->
+        <div class="projects pt-10" id="projects">
+            <div class="py-14 px-6 max-w-screen-2xl mx-auto my-0 md:my-10">
+                <p class="text-5xl text-center text-white font-medium">Projects</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-20 justify-center items-center gap-8 lg:gap-20">
+                    <div class="autoshow">
+                        <img src="images/planto.png" class="rounded-xl" alt="">
+                    </div>
+                    <div class="autoshow text-center px-4 lg:px-16">
+                        <p class="text-4xl font-medium">Planto</p>
+                        <p class="text-xl my-6">Planto is an online plant selling website that allows users to buy
+                            plants
+                            online.This website is fully responsive on
+                            various devices and its simple interface allows users to use the website without any
+                            trouble.
+                        </p>
+                        <p class="my-8">
+                            <span class="mx-3 text-xl font-medium">HTML</span>
+                            <span class="mx-3 text-xl font-medium">CSS</span>
+                            <span class="mx-3 text-xl font-medium">JavaScript</span>
+                        </p>
+                        <div class="">
+                            <a href="https://github.com/kcika/Planto"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Github</a>
+                            <a href="https://kcika.github.io/Planto/"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-20 justify-center items-center gap-8 lg:gap-20">
+                    <div class="autoshow order-last md:order-none text-center px-4 lg:px-16">
+                        <p class="text-4xl font-medium">Tastemaker</p>
+                        <p class="text-xl my-6">Designed for easy navigation, the site allows users to explore our
+                            cuisine,
+                            make reservations, and view contact details.
+                            With an integrated online ordering system and responsive design, the website ensures a
+                            seamless
+                            experience across all
+                            devices.
+                        </p>
+                        <p class="my-8">
+                            <span class="mx-3 text-xl font-medium">React</span>
+                            <span class="mx-3 text-xl font-medium">React Bootstrap</span>
+                        </p>
+                        <div class="">
+                            <a href="https://github.com/kcika/Planto"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Github</a>
+                            <a href="https://kcika.github.io/Planto/"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Demo</a>
+                        </div>
+                    </div>
+                    <div class="autoshow">
+                        <img src="images/tastemaker.png" class="rounded-xl" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-20 justify-center items-center gap-8 lg:gap-20">
+                    <div class="autoshow">
+                        <img src="images/thoughtsphere.png" height="100%" class="rounded-xl" alt="">
+                    </div>
+                    <div class="autoshow text-center px-4 lg:px-16">
+                        <p class="text-4xl font-medium">ThoughtSphere</p>
+                        <p class="text-xl my-6">ThoughtSphere is a blog website made with react and tailwind css. Its
+                            simple
+                            UI allows users to easily navigate through
+                            pages.This website is fully responsive on various devices.
+                        </p>
+                        <p class="my-8">
+                            <span class="mx-3 text-xl font-medium">React</span>
+                            <span class="mx-3 text-xl font-medium">Tailwind</span>
+                        </p>
+                        <div class="">
+                            <a href="https://github.com/kcika/Planto"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Github</a>
+                            <a href="https://kcika.github.io/Planto/"
+                                class="code px-4 py-2 mx-3 border border-white rounded-full text-lg font-medium transition-all duration-300"
+                                target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact section -->
+        <div class="contact pt-10" id="contact">
+            <div class="pt-14 px-6 max-w-7xl mx-auto my-0 md:my-10">
+                <p class="text-5xl text-center text-white font-medium">Get In Touch</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-20 justify-center gap-20">
+                    <div class="autoshow">
+                        <p class="text-5xl font-medium gradient">Let's talk</p>
+                        <p class="text-xl my-7">I'm currently available to take on new projects, so feel free to send me
+                            a
+                            message about anything that you want me to work on. You can contact me anytime.</p>
+                        <div class="my-6">
+                            <a href="mailto:kcbhumika6@gmail.com" target="_blank"
+                                class="text-xl font-medium my-4 block">
+                                <i class="fa-solid fa-envelope mr-4"></i>
+                                <span>kcbhumika6@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/9958056996" target="_blank" class="text-xl font-medium my-4 block"><i
+                                    class="fa-solid fa-phone mr-4"></i> +91
+                                9958056996
+                            </a>
+                            <a href="https://github.com/kcika" target="_blank" class="text-xl font-medium my-4"><i
+                                    class="fa-solid fa-globe mr-4"></i>https://github.com/kcika
+                            </a>
+                        </div>
+                        <div class="icons flex">
+                            <a href="https://github.com/kcika" target="_blank"
+                                class="flex justify-center items-center rounded-full text-2xl mr-4">
+                                <i class="fa-solid fa-globe transition-all duration-300"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bhumi.ka8913/" target="_blank"
+                                class="flex justify-center items-center rounded-full text-2xl mr-4">
+                                <i class="fa-brands fa-instagram transition-all duration-300"></i>
+                            </a>
+                            <a href="" class="flex justify-center items-center rounded-full text-2xl mr-4">
+                                <i class="fa-brands fa-linkedin transition-all duration-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="autoshow">
+                        <form method="POST" id="form">
+
+                            <input type="hidden" name="access_key" value="69982f19-cd64-4e1b-9d13-688215bb16d1">
+
+                            <label for="name" class="text-xl font-medium">Your Name</label><br>
+                            <input type="text" name="name" class="w-full my-4 p-3 rounded-lg bg-gray-800"
+                                placeholder="Enter your name" required>
+                            <label for="email" class="text-xl font-medium">Your Email</label><br>
+                            <input type="email" name="email" class="w-full my-4 p-3 rounded-lg bg-gray-800"
+                                placeholder="Enter your email" required>
+                            <label for="contact" class="text-xl font-medium">Your Contact</label><br>
+                            <input type="tel" name="tel" class="w-full my-4 p-3 rounded-lg bg-gray-800"
+                                placeholder="Enter your contact number" required>
+                            <label for="message" class="text-xl font-medium">Write your message here</label><br>
+                            <textarea name="message" class="w-full my-4 p-3 rounded-lg bg-gray-800"
+                                placeholder="Enter your Message" rows="7" required></textarea>
+
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <button type="submit" class="cta text-xl px-6 py-3 rounded-full">Submit now</button>
+                            <div id="result"></div>
+                        </form>
+                        <script>
+                            const form = document.getElementById('form');
+                            const result = document.getElementById('result');
+
+                            form.addEventListener('submit', function (e) {
+                                const formData = new FormData(form);
+                                e.preventDefault();
+
+                                const object = Object.fromEntries(formData);
+                                const json = JSON.stringify(object);
+
+                                result.innerHTML = "Please wait..."
+
+                                fetch('https://api.web3forms.com/submit', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        'Accept': 'application/json'
+                                    },
+                                    body: json
+                                })
+                                    .then(async (response) => {
+                                        let json = await response.json();
+                                        if (response.status == 200) {
+                                            result.innerHTML = json.message;
+                                        } else {
+                                            console.log(response);
+                                            result.innerHTML = json.message;
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.log(error);
+                                        result.innerHTML = "Something went wrong!";
+                                    })
+                                    .then(function () {
+                                        form.reset();
+                                        setTimeout(() => {
+                                            result.style.display = "none";
+                                        }, 3000);
+                                    });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-7">
+        <p class="text-xl text-center">&copy; 2024 Bhumika Khatri. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

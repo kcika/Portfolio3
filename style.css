@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg1: #292f36;
+    --bg2: #1a1e23;
+    --gray: #181f27;
+    --brand: #12f7d6;
+    --brand2: #98faec;
+}
+
+body {
+    background-color: var(--bg2);
+
+}
+
+.navCon {
+    background-color: var(--bg2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    background: linear-gradient(270deg, #12f7d6 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta {
+    background: linear-gradient(267deg, #12f7d6 0.36%, #B923E1 102.6%);
+    transition: .5s;
+}
+
+.cta:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 20px #00758f;
+}
+
+.navlinks li {
+    position: relative;
+}
+
+.navlinks li a {
+    display: inline-block;
+    padding: 12px 0;
+    color: #fff;
+    transition: all .3s;
+}
+
+.navlinks li a:hover {
+    color: var(--brand);
+    transition: all .3s;
+}
+
+.navlinks li::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 0;
+    height: 3px;
+    border-radius: 20px;
+    background: var(--brand);
+    transition: all .3s;
+}
+
+.navlinks li:hover::before {
+    width: 70%;
+    transition: all .3s;
+}
+
+.toggle,
+.cross {
+    display: none;
+}
+
+.emoji {
+    font-size: 36px;
+    animation: wavingHand 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wavingHand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.title span,
+.gradient {
+    background: linear-gradient(270deg, #12f7d6 40%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imgContainer {
+    max-width: 440px;
+    width: 100%;
+    max-height: 440px;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #B923E1;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 0 20px #B923E1;
+}
+
+.image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    background-color: var(--gray);
+}
+
+.cta-resume {
+    background: linear-gradient(267deg, #12f7d6 0.36%, #B923E1 102.6%);
+    transition: .5s;
+}
+
+.aboutCont {
+    max-width: 550px;
+    max-height: 550px;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid var(--brand2);
+    border-radius: 50%;
+    transition: all .3s;
+    box-shadow: 0 0 25px var(--brand);
+}
+
+.cta-resume:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px #00758f;
+}
+
+.html {
+    background-color: #e54f26;
+}
+
+.css {
+    background-color: #0c73b8;
+}
+
+.js {
+    background-color: #e7a020;
+}
+
+.react {
+    background-color: #28a9e0;
+}
+
+.php {
+    background-color: #8993be;
+}
+
+.mysql {
+    background-color: #00758f;
+}
+
+.bootstrap {
+    background-color: #563d7c;
+}
+
+.git {
+    background-color: #F1502F;
+}
+
+.tailwind {
+    background-color: #06b6d4;
+}
+
+.photoshop {
+    background-color: #001d26;
+}
+
+.illustrator {
+    background-color: #330000;
+}
+
+.bar {
+    width: 100%;
+    height: 18px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.progress {
+    /* width: 92%; */
+    height: 18px;
+    border-radius: 15px;
+    background: linear-gradient(267deg, #B923E1 0.36%, #12f7d6 102.6%);
+    animation: progressbar 0.6s ease-in-out forwards;
+    opacity: 0;
+}
+
+.autoshow {
+    animation: autoshowAnimation both 0.10s;
+    animation-timeline: view(90% 5%);
+}
+
+@keyframes autoshowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes progressbar {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.iconCont {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.htmlbar {
+    width: 92%;
+}
+
+.cssbar {
+    width: 88%;
+}
+
+.jsbar,
+.phpbar {
+    width: 80%;
+}
+
+.reactbar {
+    width: 75%;
+}
+
+.mysqlbar,
+.gitbar {
+    width: 65%;
+}
+
+.bootstrapbar,
+.photoshopbar,
+.illustratorbar {
+    width: 85%;
+}
+
+.tailwindbar {
+    width: 82%;
+}
+
+.projects {
+    background-color: var(--gray);
+}
+
+.code:hover {
+    border: 1px solid var(--brand);
+    box-shadow: 0 0 20px var(--brand);
+}
+
+.icons a {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid #B923E1;
+    color: #B923E1;
+    transition: all .3s;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
+    background-color: #B923E1;
+    box-shadow: 0 0 20px #B923E1;
+    transition: all .3s;
+}
+
+footer {
+    background-color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .navlinks {
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        width: 80vw;
+        background: linear-gradient(267deg, #12f7d6 0.36%, #B923E1 102.6%);
+        z-index: 999;
+        box-shadow: -5px 0 5px rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: all .3s;
+    }
+
+    .navlinks.active {
+        right: 0px;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .cross {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    .navcta {
+        display: none;
+    }
+
+    .aboutCont {
+        max-width: 440px;
+        max-height: 440px;
+        width: 100%;
+        padding: 30px;
+        border: 2px solid var(--brand2);
+        border-radius: 50%;
+        transition: all .3s;
+        box-shadow: 0 0 25px var(--brand);
+    }
+}
